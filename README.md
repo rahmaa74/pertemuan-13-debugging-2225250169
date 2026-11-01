@@ -35,3 +35,24 @@ Program berhasil dijalankan setelah perbaikan dengan hasil:
 - Nilai tertinggi: 90
 
 Seluruh hasil telah sesuai dengan hasil yang diharapkan.
+## Tabel Hasil Pengujian
+
+| ID | Pengujian | Expected | Actual Awal | Status |
+|---|---|---|---|---|
+| T1 | Rata-rata [80,60,90,70] | 75.0 | 60.0 | Gagal |
+| T2 | Rata-rata [100,80] | 90.0 | 36.0 | Gagal |
+| T3 | Status nilai 60 | Lulus | Tidak lulus | Gagal |
+| T4 | Status nilai 59 | Tidak lulus | Tidak lulus | Lulus |
+| T5 | Nilai tertinggi [80,60,90,70] | 90 | 0 | Gagal |
+
+## Retest Setelah Perbaikan
+
+| Pengujian | Hasil |
+|---|---|
+| Rata-rata | 75.0 |
+| Status 60 | Lulus |
+| Nilai tertinggi | 90 |
+
+## Kesimpulan
+
+Debugging berhasil dilakukan dengan menemukan dan memperbaiki tiga bug, yaitu kesalahan perhitungan rata-rata, penentuan status kelulusan, dan pencarian nilai tertinggi. Setelah dilakukan retest, seluruh hasil program sesuai dengan yang diharapkan.
